@@ -201,7 +201,9 @@ class _SignUpState extends State<SignUp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        backgroundColor: Colors.grey[800],
         appBar: AppBar(
+          backgroundColor: Colors.grey[700],
           title: Text('Sign In'),
         ),
         body: Center(
@@ -216,6 +218,7 @@ class _SignUpState extends State<SignUp> {
                     child: TextField(
                       decoration: new InputDecoration.collapsed(
                         hintText: 'E - mail',
+
                       ),
                       controller: txtUserEmail,
                     ),
